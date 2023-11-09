@@ -1,8 +1,8 @@
 $('.open-btn').click(function(){
-    $('.show-aside').slideDown();
+    $('.show-aside').fadeIn(500);
 });
 $('.closing-btn').click(function(){
-    $('.show-aside').slideUp(200);
+    $('.show-aside').fadeOut(400);
 });
 
 $('.slide-btn').click(function(e){

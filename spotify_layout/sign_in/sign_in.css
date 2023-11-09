@@ -11,6 +11,17 @@ body {
   color: #fff;
   scroll-behavior: auto;
 }
+body .warning {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: #333;
+}
+body .warning p {
+  text-align: center;
+  font-size: 0.8rem;
+}
 body .header {
   height: 15vh;
   width: 100;
@@ -111,7 +122,6 @@ body .header .show-aside {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
   position: fixed;
-  top: 0;
   right: 0;
 }
 body .header .show-aside .background {
@@ -787,7 +797,11 @@ body .footer .linked__logo {
 body .footer .linked__logo h1 {
   font-size: 1.5rem;
 }
-body .footer .linked__logo i {
+body .footer .linked__logo a {
+  display: inline-block;
+  color: #fff;
+}
+body .footer .linked__logo a i {
   font-size: 2rem;
 }
 body .footer .linked__icon {

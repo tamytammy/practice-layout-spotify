@@ -121,8 +121,7 @@ body .header .show-aside {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-  position: fixed;
-  top: 0;
+  position: absolute;
   right: 0;
 }
 body .header .show-aside .background {
@@ -131,7 +130,6 @@ body .header .show-aside .background {
   height: 100vh;
   background-color: #000;
   position: fixed;
-  top: 0;
   right: 0;
   z-index: 1;
 }
