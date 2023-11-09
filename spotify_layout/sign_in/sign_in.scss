@@ -1,0 +1,208 @@
+
+@import '../variables';
+@import '../main/main.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #121212;
+    .header{
+        height: 15vh;
+        width: 100%;
+        background-color: #000;
+        &__logo{
+            a{
+                display: inline-block;
+                color: #fff;
+            }
+        }
+        
+    }
+    main{
+        .sign-in__box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #000;
+            width: 60%;
+            margin: 3rem auto;
+            @include respond(phone){
+                width: 100%;
+                margin: 0 auto;
+            }
+
+
+            h1{
+                text-align: center;
+                font-size: 2rem;
+
+                padding: 5rem 1.5rem 1rem 1.5rem;
+                @include respond(phone){
+                    padding:1.5rem;
+                }
+            }
+            .btn-list{
+   
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                padding: 2.5rem;
+
+                border-bottom: 1px solid #333;
+                @include respond(phone){
+                    width: 100%;
+                    padding:0 0 1rem 0;
+                }
+                   button{
+                    width: 60%;
+                    border: none;
+                    background-color: transparent;
+                    
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    color: $font-grey-color;
+                    border-radius: 100px;
+                    padding: .5rem 1.5rem;
+                    border: 1px solid #999;
+                    font-weight: 700;
+
+                    margin-bottom: .5rem;
+
+                    @include respond(phone){
+                        width: 80%;
+                        padding: .5rem 1.5rem .5rem 0;
+                    }
+
+                    &:hover{
+                        border-color: #fff;
+                    }
+                    
+                    img{
+                    width: 4vh;
+                    height: 4vh;
+                    margin-right: .5rem;
+                    }
+            } 
+            }
+
+            .form{
+                padding: 2rem 3rem;
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-bottom: 1px solid #333;
+
+                @include respond(phone){
+                    width: 100%;
+                }
+                
+                form{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .group{
+                        display: flex;
+                        width: 60%;
+                        margin: 0 auto;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        @include respond(phone){
+                            width: 100%;
+                        }
+                        label{
+                        font-size: .8rem;
+                        font-weight: 700;
+                        margin-bottom: .5rem;
+                        }
+                        input{
+                        width: 80%;
+                        padding: .5rem 1rem;
+                        margin-bottom: .5rem;
+                        background-color: #111;
+                        border: none;
+                        border: 1.5px solid #333;
+                        font-size: 1rem;
+                        color: #fff;
+
+                    }
+                    }
+                    label{
+                    span{
+                        text-align: start;
+                        font-size: .6rem;
+                    }
+                    }
+                    button.sign-btn{
+                        border: none;
+                        background-color: transparent;
+                        width: 50%;
+                        background-color: $font-hover-color;
+                        padding: .5rem 1.5rem;
+                        font-weight: 700;
+                        border-radius: 100px;
+                        margin: .5rem 1rem;
+                        @include respond(phone){
+                            width: 80%;
+                        }
+                        &:hover{
+                            transform: scale(1.03)
+                        }
+                    }
+   
+                }
+                
+                a.forget{
+                    @include a-hover-linked(500);
+                    text-align: center;
+                    text-decoration: underline;
+                    }       
+                    
+                
+            }
+
+            .not{
+
+                padding: 3rem 4rem 0;
+                text-align: center;
+                h4{
+                    color: $font-grey-color;
+                    display: inline-block;
+                }
+                a.go{
+                    @include a-hover-linked(500);
+                    text-decoration: underline;
+                    margin-bottom: 5rem;
+                }
+                p{
+                    font-size: .7rem;
+                    color: $font-grey-color;
+                    a{
+                        color: $font-grey-color ;
+                    }
+                }
+
+            }
+            
+        }
+
+    }
+    
+}

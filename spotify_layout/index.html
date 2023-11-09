@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Spotify | Layout Practice</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./main/main.css">
+    <link rel="shortcut icon" href="./image/spotify_icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="warning"><p>本網站純屬網頁排版練習使用</p></div>
+    <header class="header">
+
+        <div class="header__logo">
+            <a href="./index.html"><i class="fa-brands fa-spotify"></i></a>
+            <span>&nbsp;</span>
+            <h1>Spotify</h1>
+        </div>
+
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">支援</a></li>
+                <li><a href="#">下載</a></li>
+                <li><span> | </span></li>
+                <li><a href="./signing.html">註冊</a></li>
+                <li><a href="./signing.html">登入</a></li>
+            </ul>
+        </nav>
+
+
+
+        <!-- respond(phone) 漢堡單 -->
+        <div class="respond__bar">
+            <button class="open-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <!-- respond-phone 的side menu bar -->
+        <div class="show-aside">
+            <div class="background">
+                <button class="closing-btn"><i class="fa-solid fa-xmark"></i></button>
+            
+            <ul>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">支援</a></li>
+                <li><a href="#">下載</a></li>
+                <li><i class="fa-solid fa-minus"></i></li>
+                <li><a href="#" class="thin">註冊</a></li>
+                <li><a href="#" class="thin">登入</a></li>            
+            </ul>
+                <div class="aside__logo">
+                        <i class="fa-brands fa-spotify"></i>
+                        <span>&nbsp;</span>
+                        <h1>Spotify</h1>
+                </div>
+
+            </div>
+        </div>
+        <!-- show-aside -->
+
+
+    </header>
+
+<main class="main">
+    <!-- 大廣告區域 -->
+    <section class="banner">
+         <div class="banner__text">
+            <h1>暢聽音樂不受限。試用 1 個月 <br>
+            Premium，只要 免費。</h1>
+            <h3>之後只要 $149/月，可隨時取消。</h3>
+         </div>
+         <div class="banner__linked">
+            <a href="./signing.html" class="banner__linked-free signin">試試 免費試用 1 個月</a>
+            <a href="#project" class="banner__linked-more">查看所有Premium方案</a>
+         </div>
+         <div class="banner__policy">
+            <p>前 1 個月免費，之後每月 $149。未曾試用 Premium 的使用者才 <br>
+            適用此優惠。<a href="#" class="banner__policy-link">須遵守相關條款。</a></p>
+         </div>
+    </section>
+
+
+    <!-- 比較付費會員表格 -->
+    <section class="table">
+        <div class="table__text">
+            <h1>截然不同的聽覺體驗</h1>
+            <h3>升級 Premium，聆聽方式操之在手。可隨時取消。</h3>
+        </div>
+        <table class="table__content">
+            <thead>
+            <th>方案功能</th>
+            <th class="free">Spotify  <br>Free 方案</th>
+            <th class="project">Spotify <br>Premium 方案</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><p>無廣告暢聽音樂</p></th>
+                    <td><i class="fa-solid fa-minus"></i></td>
+                    <td><i class="fa-solid fa-circle-check"></i></td>
+                </tr>
+                <tr>
+                    <th><p>下載並離線收聽</p></th>
+                    <td><i class="fa-solid fa-minus"></i></td>
+                    <td><i class="fa-solid fa-circle-check"></i></td>
+                </tr><tr>
+                    <th><p>高音質</p></th>
+                    <td><i class="fa-solid fa-minus"></i></td>
+                    <td><i class="fa-solid fa-circle-check"></i></td>
+                </tr><tr>
+                    <th><p>與好友一起即時聆聽</p></th>
+                    <td><i class="fa-solid fa-minus"></i></td>
+                    <td><i class="fa-solid fa-circle-check"></i></td>
+                </tr><tr>
+                    <th><p>整理聆聽佇列</p></th>
+                    <td><i class="fa-solid fa-minus"></i></td>
+                    <td><i class="fa-solid fa-circle-check"></i></td>
+                </tr>
+            </tbody>
+        </table>
+        
+            
+    </section>
+
+
+    <!-- 付費會員種類介紹 -->
+    <section class="project" id="project">
+        
+        <div class="project__text">
+            <h1>方案價格實惠，滿足各種需求</h1>
+            <p>任選一種 Premium 方案，在手機、喇叭和其他裝置上盡情收聽無廣告音樂，完全不受限。提供多種付款方式，可隨時取消。</p>
+        </div>
+
+        <div class="project__box">
+            <div class="border-setting project__box-1">
+                <div class="flex-box">
+                <h4>所有 Premium 方案皆包含以下功能</h4>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i>&nbsp;無廣告暢聽音樂</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp;下載並離線收聽</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp;由你決定歌曲播放順序</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp;高音質</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp;與好友一起即時聆聽</li>
+                    <li><i class="fa-solid fa-check"></i>&nbsp;整理聆聽佇列</li>
+                </ul>
+                </div>    
+            </div>
+            <div class="border-setting price-box project__box-2">
+                <h3 class="tag">免費使用 1 個月</h3>
+                <div class="content">
+                    
+                    <div class="content__price">
+                        <h2>Premium Individual</h2>
+                        <h3>免費</h3>
+                        <p>可享 1 個月服務</p>
+                    </div>
+                    <ul>
+                        <li>1 個 Premium 帳戶</li>
+                        <li>可隨時取消</li>
+                        <br>
+                    </ul>
+
+                    <a href="./signing.html" class="signin">試試 免費試用 1 個月</a>
+                    <p>前 1 個月免費，之後每月 $149。未曾試用 Premium 的使用者才
+                    適用此優惠。<a href="#" class="banner__policy-link">須遵守相關條款。</a></p>
+                    
+                </div>
+            </div>
+            <div class="border-setting price-box project__box-3">
+                <h3 class="tag">免費使用 1 個月</h3>
+                <div class="content">
+                    
+                    <div class="content__price">
+                        <h2>Premium Student</h2>
+                        <h3>免費</h3>
+                        <p>可享 1 個月服務</p>
+                    </div>
+                    <ul>
+                        <li>1 個經驗證的 Premium 帳戶</li>
+                        <li>符合資格的學生可享折扣</li>
+                        <li>可隨時取消</li>
+                    </ul>
+
+                    <a href="./signing.html" class="signin">試試 免費試用 1 個月</a>
+                    <p>前 1 個月免費，之後每月 $75。優惠僅限就讀於認證高教機構且從未試用 Premium 的學生。<a href="#" class="banner__policy-link">須遵守相關條款。</a></p>
+                    
+                </div>
+            </div>
+            <div class="border-setting price-box project__box-4">
+                <h3 class="tag">免費使用 1 個月</h3>
+                <div class="content">
+                    
+                    
+                    <div class="content__price">
+                        <h2>Premium Duo</h2>
+                        <h3>免費</h3>
+                        <p>可享 1 個月服務</p>
+                    </div>
+                    <ul>
+                        <li>2 個 Premium 帳戶</li>
+                        <li>可隨時取消</li>
+                        <br>
+                    </ul>
+
+                    <a href="./signing.html" class="signin">試試 免費試用 1 個月</a>
+                    <p>前 1 個月免費，之後每月 $198。未曾試用 Premium 的使用者才適用此優惠。適用於居住在同一地址的伴侶。<a href="#" class="banner__policy-link">須遵守相關條款。</a></p>
+                    
+                </div>
+            </div>
+            <div class="border-setting price-box project__box-5">
+                <h3 class="tag">免費使用 1 個月</h3>
+                <div class="content">
+                    
+                    <div class="content__price">
+                        <h2>Premium Family</h2>
+                        <h3>免費</h3>
+                        <p>可享 1 個月服務</p>
+                    </div>
+                    <ul>
+                        <li>最多可供 6 個 Premium 帳戶使用</li>
+                        <li>封鎖兒童不宜的音樂</li>
+                        <li>可隨時取消</li>
+                    </ul>
+
+                    <a href="./signing.html" class="signin">試試 免費試用 1 個月</a>
+                    <p>前 1 個月免費，之後每月 $268。未曾試用 Premium 的使用者才適用此優惠。最多可供 6 名居住在同一地址的家庭成員使用。<a href="#" class="banner__policy-link">須遵守相關條款。</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <div class="faqs__text">
+            <h1>還有疑問嗎？</h1>
+            <p>我們來幫你解答。
+                <br>
+            你可以在 <a href="#">這裡</a>查看更多已回答的問題。</p>
+        </div>
+        <div class="faqs__togglebar">
+            <div class="faqs__togglebar-1">
+                    <h3 class="slide-btn">Spotify Premium 試用方案如何運作？<span><i class="fa-solid fa-angle-down"></i></span></h3>
+                    <p class="show-content">如果你從未訂閱過 Premium，就有機會免費體驗，或以折扣價格試用。
+
+                    即使是試用方案，仍須輸入有效的付款方式才能註冊。如果你在優惠期結束後想繼續使用 Premium，我們會根據這項資訊來確認你所在的國家/地區並收取費用。
+
+                    我們會在試用期結束的 7 天前提醒你。須遵守國家/地區限制與相關條款。</p>
+            </div>
+            <div class="faqs__togglebar-2">
+                    <h3 class="slide-btn">如何取消訂閱 Premium 方案？<span><i class="fa-solid fa-angle-down"></i></span></h3>
+                    <p class="show-content">你隨時可以前往帳戶頁面，線上輕鬆取消 Premium 方案。在下次付款日之前，你仍能使用 Premium；在付款日之後，你的帳戶便會切換為免費方案。
+
+切換為免費版帳戶後，系統會保留你儲存的所有播放清單和音樂，你可以繼續收聽有廣告的音樂。</p>
+            </div>
+            <div class="faqs__togglebar-3">
+                    <h3 class="slide-btn">Premium Duo 方案如何運作？<span><i class="fa-solid fa-angle-down"></i></span></h3>
+                    <p class="show-content">Premium Duo 方案可供 2 位同住親友使用。比起購買兩個原價 Premium Individual 帳戶，訂閱此方案更加優惠。我們會要求你提供地址資訊，以便確認你們居住在同一地址。購買後即可邀請成員加入方案。每位成員各自擁有獨立的 Premium 帳戶，可以同時使用自己的帳戶收聽。每個人都能儲存自己喜愛的音樂和播放清單，其他方案成員無法看到你正在收聽的音樂。
+
+請在此閱讀更多關於 Premium Duo 的資訊。</p>
+            </div>
+            <div class="faqs__togglebar-4">
+                    <h3 class="slide-btn">Premium Family 方案如何運作？<span><i class="fa-solid fa-angle-down"></i></span></h3>
+                    <p class="show-content">Premium Family 方案可供最多 6 位同住親友使用。比起各自購買原價 Premium Individual 帳戶，訂閱此方案更加優惠。我們會要求你提供地址資訊，以便確認你們居住在同一地址。購買後即可邀請成員加入方案。每位成員各自擁有獨立的 Premium 帳戶，可以同時使用自己的帳戶收聽。每個人都能儲存自己喜愛的音樂和播放清單，其他方案成員無法看到你正在收聽的音樂。
+
+請在此閱讀更多關於 Premium Family 的資訊。</p>
+            </div>
+            <div class="faqs__togglebar-5">
+                    <h3 class="slide-btn">Premium Student 方案如何運作？<span><i class="fa-solid fa-angle-down"></i></span></h3>
+                    <p class="show-content">只要就讀於獲認證的大專院校且年滿 18 歲，就符合學生優惠資格，最多可享受 4 年 Premium Student 服務。
+
+請在此閱讀更多 關於 Premium Student 的資訊。</p>
+            </div>
+            <div class="faqs__togglebar-6">
+                    <h3 class="slide-btn">台灣的 Spotify Premium 方案價格為何？<span><i class="fa-solid fa-angle-down"></i></span></h3>
+                    <p class="show-content">台灣的 Spotify Premium 價格會依你選擇的 Premium 方案而異：Spotify Premium Individual 方案的價格為每月 $149，Premium Duo 方案的價格為每月 $198，Premium Family 方案的價格為每月 $268，Premium Student 方案的價格為每月 $75。如果你從未訂閱過 Premium 方案，就有機會免費體驗，或以折扣價格試用。須遵守國家/地區限制與相關條款。</p>
+            </div>
+            
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <section class="linked">
+        <div class="linked__logo">
+            <a href="./index.html"><i class="fa-brands fa-spotify"></i></a>
+            <h1>&nbsp;Spotify</h1>
+        </div>
+        <div class="linked__company linked__box">
+            <h6>公司簡介</h6>
+            <ul>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">職位空缺</a></li>
+                <li><a href="#">For the Record</a></li>
+            </ul>
+        </div>
+        <div class="linked__social linked__box">
+            <h6>社群</h6>
+            <ul>
+                <li><a href="#">藝人專屬</a></li>
+                <li><a href="#">開發商</a></li>
+                <li><a href="#">廣告宣傳</a></li>
+                <li><a href="#">投資者</a></li>
+                <li><a href="#">供應商</a></li>
+            </ul>
+        </div> 
+        <div class="linked__common linked__box">
+                <h6>常用連結</h6>
+            <ul>
+                <li><a href="#">支援</a></li>
+                <li><a href="#">網路播放器</a></li>
+                <li><a href="#">免費行動版 App</a></li>
+            </ul>
+        </div>
+        <div class="linked__icon">
+      
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+           
+        </div>
+        <div class="linked__policy">
+            <div class="linked__policy-1">
+                <ul>
+                    <li><a href="#">注意條款</a></li>
+                    <li><a href="#">隱私權中心</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">Cookie</a></li>
+                    <li><a href="#">關於廣告</a></li>
+                    <li><a href="#">無障礙</a></li>
+                </ul>
+            </div>
+            <div class="linked__policy-2">
+                <a href="#"><i class="fa-solid fa-globe"></i>台灣</a>
+                <span>&copy;2023 Spotify AB</span>
+            </div>
+        </div>
+    </section>
+</footer>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

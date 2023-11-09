@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入 | Spotify | Layout Practice</title>
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./sign_in/sign_in.css">
+
+
+</head>
+<body>
+     <header class="header">
+        <div class="header__logo">
+            <a href="./index.html"><i class="fa-brands fa-spotify"></i></a>
+            <span>&nbsp;</span>
+            <h1>Spotify</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="sign-in__box">
+            <h1>登入到 Spotify</h1>
+                <!-- 三種帳號登入方式 -->
+                <div class="btn-list">
+                <button><span><img src="./image/google.svg.svg" alt="google"></span>
+                以 Google 帳號繼續</button>
+                <button><span><img src="./image/facebook.svg.svg" alt="facebook"></span>
+                
+                使用 Facebook 帳號繼續</button>
+                <button><span><img src="./image/silver.apple.svg" alt="apple"></span>
+                
+                使用 Apple 帳號繼續</button>
+                </div>
+
+            <!-- 登入帳號密碼輸入 -->
+                <div class="form">
+                <form>
+                    <div class="group">
+                    <label for="user_name">電子信箱或使用者名稱</label>
+                    <input type="text" name="user_name" id="user_name" class="username" placeholder="電子信箱或使用者名稱" required>
+                    </div>
+                    <div class="group">
+                    <label for="password">密碼</label>
+                    <input type="password" id="password" class="password" placeholder="密碼">
+                    </div>
+                    
+
+                    <label for="memory"> <span>記住我</span></label>
+
+                    <button class="sign-btn">登入</button>
+                
+                
+                </form>
+                <a href="#" class="forget">忘記密碼？</a>
+                </div>
+
+                <!-- 未註冊帳號需註冊或登入 -->
+                <div class="not">
+                    <h4>未註冊帳戶？</h4><a class="go" href="#">註冊 Spotify</a>
+                    <p>本網站採用 reCAPTCHA 防護機制，並遵守 Google 的 <a href="#">《隱私權政策》</a>與 <a href="#">《服務條款》。</a>
+                    </p>
+                </div>
+        </div>
+    </main>
+</body>
+</html>
